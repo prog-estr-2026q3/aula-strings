@@ -1,24 +1,24 @@
-# Exemplos de Código - Cadeias de Caracteres (Strings)
+# Exemplos de código - cadeias de caracteres (strings)
 
-Este diretório contém todos os exemplos de código-fonte apresentados no **Capítulo 05 (Cadeias de Caracteres / Strings)** das notas de aula da disciplina de Programação Estruturada (MCTA028-15).
+Este diretório contém todos os exemplos de código-fonte apresentados no capítulo 05 (cadeias de caracteres / strings) das notas de aula da disciplina de Programação Estruturada (MCTA028-15).
 
 ---
 
-## Estrutura do Projeto
+## Estrutura do projeto
 
 ```
 .
 ├── Makefile
 ├── README.md
 ├── .gitignore
-├── .devcontainer/   # Configuração de ambiente para Dev Container / GitHub Codespaces
+├── .devcontainer/   # Configuração de ambiente para dev container / GitHub Codespaces
 ├── src/             # Códigos-fonte (.c) dos exemplos e algoritmos
 └── build/           # Executáveis compilados (ignorado pelo git)
 ```
 
 ---
 
-## Como Compilar e Executar
+## Como compilar e executar
 
 ### 1. Compilar todos os programas válidos
 
@@ -62,14 +62,14 @@ make clean
 
 ---
 
-## Descrição dos Códigos em `src/`
+## Descrição dos códigos em `src/`
 
-### Exemplos Conceituais do Capítulo
+### Exemplos conceituais do capítulo
 
 - `01_char_vs_inteiros.c`: Interoperabilidade e aritmética com o tipo `char` (tabela ASCII).
 - `02_declaracao_strings.c`: Sintaxe de declaração, regra de capacidade $N+1$, inicialização parcial e concatenação estática.
 - `03_string_fundamentos.c`: Inspeção byte a byte do layout de memória de arranjos de strings na pilha.
-- `03b_string_interning.c`: Unificação de literais (*string interning*) e comparação de ponteiros em `.rodata` vs. Pilha.
+- `03b_string_interning.c`: Unificação de literais (*string interning*) e comparação de ponteiros em `.rodata` vs. pilha.
 - `04_modificacao_literal.c`: Mutabilidade de arranjo na pilha vs. violação de escrita em literais constantes (`SIGSEGV`).
 - `05_strings_saida.c`: Exibição de strings na saída padrão contrastando as rotinas `puts` e `fputs`.
 - `06_ler_linha_robusta.c`: Entrada segura de linhas completas com `fgets`, remoção do `\n` e descarte de excedentes de fluxo.
@@ -82,7 +82,7 @@ make clean
 - `13_cli_utilitario.c`: Processamento de argumentos de linha de comando (`argc`/`argv`) e conversão robusta com `strtol`.
 - `14_estouro_buffer_asan.c`: Demonstração didática de *buffer overflow* interceptado pelo AddressSanitizer.
 
-### Algoritmos Fundamentais sobre Strings
+### Algoritmos fundamentais sobre strings
 
 - `24_algoritmo_prefixo_sufixo.c`: Funções idiomáticas `comeca_com` e `termina_com` para validação de prefixos e sufixos.
 - `25_algoritmo_texto_para_inteiro.c`: Conversão de texto para inteiro (*parsing*) por acumulação decimal com validação de dígitos e sinal.
@@ -90,7 +90,7 @@ make clean
 - `27_algoritmo_meu_strstr.c`: Algoritmo ingênuo de busca de subcadeia por janela deslizante (*sliding window*).
 - `28_algoritmo_distancia_hamming.c`: Métrica de distância de Hamming para sequências textuais e alinhamento de fitas de DNA.
 
-### Soluções dos Exercícios Propostos
+### Soluções dos exercícios propostos
 
 - `15_exercicio_inversao_ponteiros.c`: Inversão *in-place* com dois ponteiros convergentes.
 - `16_exercicio_meu_strcmp.c`: Implementação de `meu_strcmp` com conversão estrita para `unsigned char` conforme a norma ISO C.
@@ -99,5 +99,5 @@ make clean
 - `19_exercicio_compactar_espacos.c`: Compactação *in-place* de múltiplos espaços com varredura linear.
 - `20_exercicio_utilitario_wc.c`: Utilitário de contagem de linhas, palavras e bytes via máquina de estados.
 - `21_exercicio_cifra_cesar.c`: Cifrador de César na linha de comando (`-k <deslocamento>`) com normalização cíclica em $[0, 25]$.
-- `22_exercicio_parser_url.c`: Parser de parâmetros de consulta Web (*query string*) com `strtok` e `strchr`.
+- `22_exercicio_parser_url.c`: Parser de parâmetros de consulta web (*query string*) com `strtok` e `strchr`.
 - `23_exercicio_validar_acesso.c`: Autenticação segura de senha prevenindo estouro de buffer.
