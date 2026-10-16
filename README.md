@@ -1,6 +1,6 @@
 # Exemplos de código - cadeias de caracteres (strings)
 
-Este diretório contém todos os exemplos de código-fonte apresentados no capítulo 05 (cadeias de caracteres / strings) das notas de aula da disciplina de Programação Estruturada (MCTA028-15).
+Este diretório contém todos os exemplos de código-fonte apresentados no capítulo 05 (cadeias de caracteres / strings) das notas de aula da disciplina de programação estruturada (MCTA028-15).
 
 ---
 
